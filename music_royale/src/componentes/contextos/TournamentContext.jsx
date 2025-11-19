@@ -100,9 +100,7 @@ export const TournamentProvider = ({ children }) => {
       updateVideos,
       advancePosition,
       finalizeWinner,
-      goHome,
-      playlists,
-      setPlaylists
+      goHome
     }}>
       {children}
     </TournamentContext.Provider>
