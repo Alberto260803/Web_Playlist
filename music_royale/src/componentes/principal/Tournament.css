@@ -1,0 +1,106 @@
+.tournament {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 40px; /* para que nunca se corte el botón */
+  position: relative;   /* 👈 añadido para que el botón se posicione dentro */
+}
+
+.tournament h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* 4 videos en 2x2 */
+.battle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  width: 100%;
+}
+
+.battle-item {
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.battle-item h3 {
+  background: #ff4757;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.battle-item button {
+  background: #2ed573;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.1rem;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.battle-item button:hover {
+  background: #1eae60;
+}
+
+.vote-counter {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Bloques sin vídeo con altura fija */
+.empty-slot {
+  width: 100%;
+  height: 330px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+.next-button {
+  margin-top: 30px;
+}
+
+.next-button button {
+  background: #3742fa;
+  border: none;
+  color: #fff;
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.next-button button:hover {
+  background: #1e2cf0;
+}
+
+/* Botón de inicio arriba a la izquierda */
+.home-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.home-btn img {
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,41 @@
+.playlist-selector {
+  margin-top: 40px;
+}
+
+.playlist-selector h2 {
+  margin-bottom: 20px;
+  color: #ffd700;
+  font-size: 1.6rem;
+}
+
+.playlist-selector form {
+  display: flex;
+  flex-direction: column;   /* una debajo de otra */
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.playlist-selector input {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.playlist-selector button {
+  padding: 14px;
+  background: #ffd700;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.playlist-selector button:hover {
+  background: #ffae00;
+}
