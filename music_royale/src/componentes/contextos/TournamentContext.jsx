@@ -82,6 +82,27 @@ export const TournamentProvider = ({ children }) => {
     setPlaylists([]);
   };
 
+  const goBackPosition = () => {
+    setPosition(prev => {
+      let nextPos = prev + 1;
+      const maxLength = Math.max(...videosByPlaylist.map(v => v.length));
+
+      // saltar posiciones vacías hacia atrás
+      while (nextPos <= maxLength && videosByPlaylist.every(videos => !videos[nextPos - 1])) {
+        nextPos++;
+      }
+
+      // si nos pasamos del máximo, nos quedamos en el máximo
+      if (nextPos > maxLength) {
+        return maxLength;
+      }
+
+      resetActive();
+      setFinished(false);
+      return nextPos;
+    });
+  };
+
   
   return (
     <TournamentContext.Provider value={{
@@ -101,8 +122,7 @@ export const TournamentProvider = ({ children }) => {
       advancePosition,
       finalizeWinner,
       goHome,
-      playlists,
-      setPlaylists
+      goBackPosition
     }}>
       {children}
     </TournamentContext.Provider>

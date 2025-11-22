@@ -7,7 +7,7 @@ import { useTournament } from '../contextos/TournamentContext.jsx';
 const Tournament = ({ playlists }) => {
   const {
     position, scores, videosByPlaylist,
-    activateIndex, updateScores, updateVideos, advancePosition, goHome
+    activateIndex, updateScores, updateVideos, advancePosition, goHome, goBackPosition
   } = useTournament();
 
   const years = [2022, 2023, 2024, 2025];
@@ -66,11 +66,15 @@ const Tournament = ({ playlists }) => {
           );
         })}
       </div>
-      <div className="next-button">
-        <button onClick={() => advancePosition()}>
-          {position > 1 ? "Siguiente posición" : "Finalizar torneo"}
+      <div className="nav-buttons">
+        <button className="arrow-btn" onClick={() => goBackPosition()}>
+          <img src="https://cdn-icons-png.flaticon.com/512/318/318477.png" alt="Atrás" />
+        </button>
+        <button className="arrow-btn" onClick={() => advancePosition()}>
+          <img src="https://cdn-icons-png.flaticon.com/512/318/318476.png" alt="Siguiente" />
         </button>
       </div>
+
     </div>
   );
 };
