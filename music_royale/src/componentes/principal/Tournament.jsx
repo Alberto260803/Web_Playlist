@@ -11,7 +11,7 @@ const Tournament = ({ playlists }) => {
   } = useTournament();
 
   const years = [2022, 2023, 2024, 2025];
-  const apiKey = "API_KEY_HERE"; // Reemplaza con tu clave de API de YouTube
+  const apiKey = "AIzaSyBkHBwpuKvsJeHLjlyw7Vyc0p0G8P46858"
 
   useEffect(() => {
     const loadPlaylists = async () => {
