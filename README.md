@@ -1,4 +1,4 @@
-## 🎵 Playlist Rumble: El Torneo Musical Anual 🏆
+## 🎵 Music Royale
 
 Este proyecto es una aplicación web simple construida con **React** que simula un torneo musical para determinar qué año (o qué playlist) es el **mejor musicalmente**, basándose en la votación del usuario.
 
