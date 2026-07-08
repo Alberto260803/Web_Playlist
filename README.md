@@ -31,12 +31,10 @@ Para que la aplicación funcione correctamente, es **imprescindible** obtener y 
 #### 2. Configurar la Aplicación
 
 1.  Clona este repositorio.
-2.  Navega al archivo principal del componente de torneo: `src/components/Tournament.jsx`.
-3.  Busca la línea donde se declara la variable de la API Key y **sustitúyela** por la clave que has generado:
+2.  Crea un fichero de variables de entorno (.env) y pon tu API Key:
 
     ```javascript
-    // src/components/Tournament.jsx
-    const apiKey = "API_KEY_HERE"; // Reemplaza con tu clave de API de YouTube
+    VITE_YOUTUBE_API_KEY="TU_API_KEY" // Sustituye por tu API key.
     ```
 
 #### 3. Ejecutar el Proyecto
