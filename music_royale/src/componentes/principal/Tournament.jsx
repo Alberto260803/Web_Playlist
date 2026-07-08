@@ -11,7 +11,7 @@ const Tournament = ({ playlists }) => {
   } = useTournament();
 
   const years = [2022, 2023, 2024, 2025];
-  const apiKey = "AIzaSyBkHBwpuKvsJeHLjlyw7Vyc0p0G8P46858"
+  const apiKey = import.meta.env.VITE_YOUTUBE_API_KEY;
 
   useEffect(() => {
     const loadPlaylists = async () => {
